@@ -32,8 +32,10 @@ submitBtn.addEventListener('click', () => {
                 <span class="fs-4">${response.weather[0].description}</span>
             </div>  
             <ul class="list-unstyled">
-                <li class="fs-3">Temperature: ${response.main.temp.toFixed(1)} C°</li>
-                <li class="fs-3">Humidity: ${response.main.humidity} %rh</li>
+                <li class="fs-3">Temperature: ${response.main.temp.toFixed(1)} K</li>
+                <li class="fs-3">Humidity: ${response.main.humidity} %</li>
+                <li class="fs-3">Wind Speed: ${response.wind.speed} m/s</li>
+                <li class="fs-3">Cloudiness: ${response.clouds.all} %</li>
             <ul>     
         </div>                                  
     </div>`)
